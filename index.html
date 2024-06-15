@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <title>Color Scheme Generator</title>
   </head>
@@ -10,7 +16,7 @@
     <div class="container">
       <form class="form">
         <input type="color" class="seed-box" />
-        <select name="mode" id="mode-select">
+        <select name="mode" id="mode-select" class="mode-select">
           <option value="monochrome">Monochrome</option>
           <option value="monochrome-dark">monochrome-dark</option>
           <option value="monochrome-light">monochrome-light</option>
@@ -25,7 +31,20 @@
     </div>
   </header>
   <body>
-    <div class="container"></div>
+    <div class="container grid-container">
+      <div class="color color-1"></div>
+      <div class="color color-2"></div>
+      <div class="color color-3"></div>
+      <div class="color color-4"></div>
+      <div class="color color-5"></div>
+    </div>
+    <div class="color-names">
+      <div class="color-name" id="color-name-1"></div>
+      <div class="color-name" id="color-name-2"></div>
+      <div class="color-name" id="color-name-3"></div>
+      <div class="color-name" id="color-name-4"></div>
+      <div class="color-name" id="color-name-5"></div>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>
