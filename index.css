@@ -45,4 +45,14 @@
     isolation: isolate;
   }
 
+  .container{
+    margin: 0 auto;
+    width: 60vw;
+  }
   
+  .form{
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+  }
