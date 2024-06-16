@@ -57,6 +57,14 @@
     display: flex;
     flex-direction: column;
     gap: 1em;
+    margin-bottom: 2em;
+  }
+
+  .mode-select{
+    padding: 0 0.5em;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
   }
 
   .seed-box{
@@ -67,6 +75,64 @@
 
   .grid-container{
     display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+      "c1 c1t"
+      "c2 c2t"
+      "c3 c3t"
+      "c4 c4t"
+      "c5 c5t";
+  }
+
+  .color-1{
+    grid-area: c1;
+  }
+
+  .color-2{
+    grid-area: c2;
+  }
+
+  .color-3{
+    grid-area: c3;
+  }
+
+  .color-4{
+    grid-area: c4;
+  }
+
+  .color-5{
+    grid-area: c5;
+  }
+
+  .color1t{
+    grid-area: c1t;
+  }
+  
+  .color2t{
+    grid-area: c2t;
+  }
+
+  .color3t{
+    grid-area: c3t;
+  }
+
+  .color4t{
+    grid-area: c4t;
+  }
+
+  .color5t{
+    grid-area: c5t;
+  }
+
+  .pointer{
+    cursor: pointer;
+  }
+
+  .button{
+    background: #FFFFFF;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
   }
 
   .color{
@@ -74,40 +140,39 @@
     height: 15vh;
   }
 
-  .color-1{
-    background-color: #F55A5A;
-  }
-  .color-2{
-    background-color: #2B283A;
-  }
-  .color-3{
-    background-color: #FBF3AB;
-  }
-  .color-4{
-    background-color: #AAD1B6;
-  }
-  .color-5{
-    background-color: #A626D3;
+  .color-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
-  @media (min-width: 715px){
+
+  @media (min-width: 1045px){
     .grid-container{
       display: grid;
       grid-template-columns: repeat(5, 1fr);
+      grid-template-areas:
+        "c1 c2 c3 c4 c5"
+        "c1t c2t c3t c4t c5t";
     }
 
     .color{
-      height: 75vh;
+      height: 70vh;
+    }
+
+    .color-name{
+      padding: 0.5em 0;
     }
 
     .form{
       display: grid;
       grid-template-columns: 2fr 4fr 3fr;
-      height: 4em;
+      height: 2em;
     }
 
     .seed-box{
-      height: 4em;
+      height: 2.5em;
     }
 
     body{

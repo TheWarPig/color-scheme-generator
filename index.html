@@ -14,8 +14,8 @@
   </head>
   <header>
     <div class="container">
-      <form class="form">
-        <input type="color" class="seed-box" />
+      <form id="form" class="form">
+        <input name="color" type="color" class="seed-box" />
         <select name="mode" id="mode-select" class="mode-select">
           <option value="monochrome">Monochrome</option>
           <option value="monochrome-dark">monochrome-dark</option>
@@ -26,24 +26,22 @@
           <option value="triad">triad</option>
           <option value="quad">quad</option>
         </select>
-        <button type="submit">Get color scheme</button>
+        <button class="button pointer" type="submit">Get color scheme</button>
       </form>
     </div>
   </header>
   <body>
     <div class="container grid-container">
-      <div class="color color-1"></div>
-      <div class="color color-2"></div>
-      <div class="color color-3"></div>
-      <div class="color color-4"></div>
-      <div class="color color-5"></div>
-    </div>
-    <div class="color-names">
-      <div class="color-name" id="color-name-1"></div>
-      <div class="color-name" id="color-name-2"></div>
-      <div class="color-name" id="color-name-3"></div>
-      <div class="color-name" id="color-name-4"></div>
-      <div class="color-name" id="color-name-5"></div>
+      <div class="color color-1" id="color-1"></div>
+      <div class="color color-2" id="color-2"></div>
+      <div class="color color-3" id="color-3"></div>
+      <div class="color color-4" id="color-4"></div>
+      <div class="color color-5" id="color-5"></div>
+      <div class="color-name color1t" id="color1t"></div>
+      <div class="color-name color2t" id="color2t"></div>
+      <div class="color-name color3t" id="color3t"></div>
+      <div class="color-name color4t" id="color4t"></div>
+      <div class="color-name color5t" id="color5t"></div>
     </div>
   </body>
   <script src="index.js"></script>
